@@ -3159,10 +3159,10 @@ readers do not read off random characters that represent icons */
 .fa-robot:before {
   content: "\f544"; }
 
-.fa-rocket:before {
+.fa-star:before {
   content: "\f135"; }
 
-.fa-rocketchat:before {
+.fa-starchat:before {
   content: "\f3e8"; }
 
 .fa-rockrms:before {
