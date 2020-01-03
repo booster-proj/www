@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: booster landing page
+Upstream-Contact: Daniel Morandini, Andrea Janes <daniel.morandini@keepinmind.info, ajanes@unibz.it>
+Source: https://github.com/booster-proj/www
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...
