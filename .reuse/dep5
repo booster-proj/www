@@ -1,5 +1,5 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: booster landing page
+Upstream-Name: letsboost.it landing page
 Upstream-Contact: Daniel Morandini, Andrea Janes <daniel.morandini@keepinmind.info, ajanes@unibz.it>
 Source: https://github.com/booster-proj/www
 
@@ -8,3 +8,7 @@ Source: https://github.com/booster-proj/www
 # Files: src/*
 # Copyright: $YEAR $NAME <$CONTACT>
 # License: ...
+
+Files: assets/* package* .gitignore webpack/*
+Copyright: 2020 the Booster Authors <daniel.morandini@keepinmind.info>
+License: CC-BY-1.0
