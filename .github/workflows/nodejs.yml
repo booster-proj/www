@@ -15,6 +15,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.14.1
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
     - name: npm install, build
       run: |
         npm ci
@@ -35,7 +38,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add -A
-        git commit -m "Release $(git describe master --tags --always)"
+        git commit -m "Release ${{ steps.get_version.outputs.VERSION }}"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
