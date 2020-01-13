@@ -19,8 +19,6 @@ jobs:
       run: |
         npm ci
         npm run build
-    - name: get latest version
-      run: export VERSION=`git describe --tags --always`
     - name: add build to stash
       run: |
         rm -rf node_modules
@@ -37,7 +35,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add -A
-        git commit -m "Release $VERSION"
+        git commit -m "Release $(git describe master --tags --always)"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
