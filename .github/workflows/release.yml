@@ -35,7 +35,7 @@ jobs:
         rm -r build
     - name: Add changes
       run: |
-        git config --local user.name ${{ GITHUB_ACTOR }}
+        git config --local user.name ${{ secrets.GITHUB_ACTOR }}
         git add -A
         git commit -m "Release ${{ steps.get_version.outputs.VERSION }}"
     - name: Push changes
