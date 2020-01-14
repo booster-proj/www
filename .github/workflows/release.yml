@@ -35,9 +35,12 @@ jobs:
         rm -r build
     - name: Add changes
       run: |
-        git config --local user.name ${{ secrets.GITHUB_ACTOR }}
+        git config --local user.name $GITHUB_ACTOR
         git add -A
-        git commit -m "Release ${{ steps.get_version.outputs.VERSION }}"
+        git commit -m "Release $VERSION"
+      env:
+        GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        VERSION: ${{ steps.get_version.outputs.VERSION }}
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
