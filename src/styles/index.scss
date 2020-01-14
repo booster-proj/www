@@ -53,7 +53,7 @@ header {
   .logo {
     display: block;
     width: 60%;
-    max-width: 280px;
+    max-width: 260px;
     margin: 0 auto;
   }
 
@@ -73,6 +73,7 @@ header {
 
 nav {
   display: flex;
+  margin: 1rem;
 
   a {
     flex: 1;
@@ -108,5 +109,13 @@ nav {
         background-color: darken(#28956c, 10%);
       }
     }
+  }
+}
+
+main {
+  text-align: center;
+
+  h3 {
+    margin: 2.2rem auto;
   }
 }
