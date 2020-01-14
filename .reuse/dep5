@@ -9,6 +9,6 @@ Source: https://github.com/booster-proj/www
 # Copyright: $YEAR $NAME <$CONTACT>
 # License: ...
 
-Files: assets/* package* .gitignore webpack/*
+Files: public/* package* .gitignore webpack/*
 Copyright: 2020 the Booster Authors <daniel.morandini@keepinmind.info>
 License: CC-BY-1.0
