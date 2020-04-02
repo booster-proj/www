@@ -33,7 +33,7 @@ jobs:
     - name: move to gh-pages
       run: |
         git checkout gh-pages
-        rm -rf *
+        rm -rf !(CNAME)
         git stash pop
         mv build/* .
         rm -r build
